@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import { Form, Card, Input, Button, message } from 'antd';
 import { useForm } from 'antd/lib/form/Form';
-import './List.css'
+// import './List.css'
 import { formatCountdown } from 'antd/lib/statistic/utils';
 // import axios from 'axios';
 const axios = require('axios');
-function List(props) {
+function Enroll(props) {
     // console.log(props);
     // const [form]=useForm()
     // console.log(props.match.params.id);
@@ -140,7 +140,7 @@ function List(props) {
                     ]}>
                         <Input placeholder="输入学号" />
                     </Form.Item>
-                    <Form.Item name="username" label="姓名">
+                    {/* <Form.Item name="username" label="姓名">
                         <Input placeholder="请输入姓名" />
                     </Form.Item>
                     <Form.Item name="email" label="邮箱">
@@ -148,7 +148,7 @@ function List(props) {
                     </Form.Item>
                     <Form.Item name="phone" label="手机号">
                         <Input placeholder="请输入手机号" />
-                    </Form.Item>
+                    </Form.Item> */}
                     <Form.Item name="teacher_name" label="老师姓名">
                         <Input placeholder="请输入老师姓名" />
                     </Form.Item>
@@ -165,4 +165,4 @@ function List(props) {
     )
 }
 
-export default List
+export default Enroll

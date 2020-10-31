@@ -38,7 +38,7 @@ class Test extends React.Component {
         //     confirmLoading: false,
         //     visible: false
         // });
-        let demo=this.refs.getFormValue((err,values)=>{
+        let demo = this.refs.getFormValue((err, values) => {
             console.log(values);
         })
         console.log("表单提交");
@@ -132,11 +132,12 @@ class Test extends React.Component {
             //     )
             // })
             <Fragment>
-                <Button type="primary" onClick={this.buttonClick}>增加</Button>
-                <Table dataSource={data.list} columns={columns}></Table>
-                {/* <Button>修改</Button> */}
-                <Modal visible={data.visible} onOk={this.handleSubmit} onCancel={this.handleCancle} cancelText="取消" okText="确认">
-                    增加
+                <div className='zhengti'>
+                    <Button type="primary" onClick={this.buttonClick}>增加</Button>
+                    <Table dataSource={data.list} columns={columns}></Table>
+                    {/* <Button>修改</Button> */}
+                    <Modal visible={data.visible} onOk={this.handleSubmit} onCancel={this.handleCancle} cancelText="取消" okText="确认">
+                        增加
                     {/* <Form layout="horizontal" onFinish={this.onFinish}>
                         <FormItem name="username" label="学号：" rules={[{ required: true, message: '请输入你的学号' }]}>
                             <Input></Input>
@@ -148,9 +149,9 @@ class Test extends React.Component {
                             <Input></Input>
                         </FormItem>
                     </Form> */}
-                    {/* <BMform ref="getFormValue"></BMform> */}
-                </Modal>
-
+                        {/* <BMform ref="getFormValue"></BMform> */}
+                    </Modal>
+                </div>
             </Fragment>
 
         )
